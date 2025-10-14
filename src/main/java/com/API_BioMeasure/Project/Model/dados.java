@@ -1,5 +1,6 @@
 package com.API_BioMeasure.Project.Model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.Getter;
@@ -13,7 +14,8 @@ public class dados {
     private  int id;
 
     private String nome__peca;
-    private String nome__responsavel;
+    @Column(name = "nome__responsavel")
+    private String nomeResponsavel;
     private int dados;
 }
 

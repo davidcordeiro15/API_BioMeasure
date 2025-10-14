@@ -18,5 +18,9 @@ public class DadosService {
     public List<dados> listarDados() {
         return dadosRepository.findAll();
     }
+
+    public List<dados> buscarPorResponsavel(String nomeResponsavel) {
+        return dadosRepository.findByNomeResponsavelContainingIgnoreCase(nomeResponsavel);
+    }
 }
 
