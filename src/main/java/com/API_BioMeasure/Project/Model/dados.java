@@ -16,6 +16,6 @@ public class dados {
     private String nome__peca;
     @Column(name = "nome__responsavel")
     private String nomeResponsavel;
-    private int dados;
+    private double dados;
 }
 

@@ -230,15 +230,5 @@ public class JwtUtil {
         }
     }
 
-    // ========================================
-    // GETTERS (para uso em testes/debug)
-    // ========================================
 
-    public Long getExpirationTime() {
-        return expirationTime;
-    }
-
-    public String getSecretKeyInfo() {
-        return "Chave configurada: " + (secretKey != null && !secretKey.isEmpty() ? "✅ SIM" : "❌ NÃO");
-    }
 }

@@ -1,12 +1,15 @@
 package com.API_BioMeasure.Project.DTO;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 public class DadosDTO {
     private  int id;
 
     private String nome__peca;
     private String nome__responsavel;
-    private int dados;
+
+    private double dados;
 
     public String getNome__peca() {
         return nome__peca;
@@ -24,11 +27,11 @@ public class DadosDTO {
         this.nome__responsavel = nome__responsavel;
     }
 
-    public int getDados() {
+    public double getDados() {
         return dados;
     }
 
-    public void setDados(int dados) {
+    public void setDados(double dados) {
         this.dados = dados;
     }
 }
